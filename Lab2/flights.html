@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông tin chuyến bay</title>
     <style>
+		tr:nth-child(even) {
+			background-color: #B0C4DE;
+		}
         table {
             width: 100%;
             border-collapse: collapse;
@@ -19,8 +22,48 @@
             width: 100px;
             height: auto;
         }
+		
     </style>
 <body>
+	<style>
+        h1 {
+            display: flex;
+            align-items: center;
+        }
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, san-serif;
+		}
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		
+		.topnav a.active {
+			background-color: #04AA6D;
+			color: white
+		}
+    </style>
+	<body>
+		<div class="topnav">
+        <a href="index.html" class="active">Trang chủ</a>
+        <a href="timetable.html">Thời khoá biểu</a>
+        <a href="flights.html">Thông tin chuyến bay</a>
+        <a href="recipes.html">Công thức nấu ăn ngon</a>
+    </div>
     <table>
         <tr>
             <th>Kế hoạch (Scheduled)</th>
