@@ -7,18 +7,18 @@ function drawDiceFace(number) {
   const margin = (canvas.width - diceSize) / 2;
   const dotRadius = diceSize * 0.05;
   const dotOffset = diceSize * 0.25;
-}
-ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-ctx.fillStyle = "#fff";
-ctx.fillRect(margin, margin, diceSize, diceSize);
-ctx.strokeStyle = "#000";
-ctx.lineWidth = 5;
-ctx.strokeRect(margin, margin, diceSize, diceSize);
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	
+	ctx.fillStyle = "#fff";
+	ctx.fillRect(margin, margin, diceSize, diceSize);
+	ctx.strokeStyle = "#000";
+	ctx.lineWidth = 5;
+	ctx.strokeRect(margin, margin, diceSize, diceSize);
 
-const centerX = margin + diceSize / 2;
-const centerY = margin + diceSize / 2;
-const dotPositions = [
+	const centerX = margin + diceSize / 2;
+	const centerY = margin + diceSize / 2;
+	const dotPositions = [
 	[[centerX, centerY]], //1
 	[
 		[centerX - dotOffset, centerY - dotOffset],
@@ -50,7 +50,7 @@ const dotPositions = [
 		[centerX - dotOffset, centerY + dotOffset],
 		[centerX + dotOffset, centerY + dotOffset]
 	] //6
-};
+	];
 	ctx.fillStyle = "#000";
 	dotPositions[number - 1].forEach(([x, y]) => {
 		ctx.beginPath();
