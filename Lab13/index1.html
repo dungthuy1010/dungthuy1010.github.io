@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lê Thùy Dung | CV Online</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="icon" type="img/favicon.png"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>	
+</head>
+<body>
+  <button type="button" class="toggle-dark">🌙</button>
+
+<div id="pdf-content">
+    <header>
+      <div class="avatar-wrapper">
+        <img src="img/avatar.jpg" alt="Avatar" class="avatar" />
+      </div>
+      <h1>Lê Thùy Dung</h1>
+      <p>Chuyên ngành: Sư phạm Tin học</p>
+    </header>
+
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <a href="#skills">Kỹ năng</a>
+      <a href="#experience">Kinh nghiệm</a>
+      <a href="#projects">Dự án</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <main>
+      <section id="about" class="card">
+        <h2>👋 Giới thiệu</h2>
+        <p>Tôi là Lê Thùy Dung, sinh ngày 01/01/2004, dự kiến tốt nghiệp chuyên ngành
+          Cử nhân Sư phạm Tin học tại Khoa Sư Phạm, Trường Đại học Đà Lạt
+          vào tháng 7 năm 2026.
+        </p>
+      </section>
+
+      <section id="skills" class="card skills">
+        <h2>🧠 Kỹ năng</h2>
+        <span>Python: Data Analytics</span>
+		<span>Education</span>
+        <span>ReactJS</span>
+        <span>Web Design</span>
+
+      </section>
+	  
+		<section id="experience" class="card">
+			<h2>💼 Kinh nghiệm</h2>
+			<ul>
+				<li><strong>Thực tập</strong> - Trường THPT ABC (02/2026 - 05/2026)</li>
+				<li><strong>Thực tập sinh</strong> (08/2026 - 02/2026)</li>
+			</ul>
+			</section>
+			
+			<section id="projects" class="card">
+			<h2>🚀 Dự án nổi bật</h2>
+			<ul>
+				<li><strong>Website giới thiệu Trung tâm Tin học</strong> - Các khóa học Online</li>
+				<li><strong>Website giới thiệu địa điểm du lịch</strong> - Thành phố Đà Lạt</li>
+				<li><strong>Xây dựng quản lý tài chính PySimpleGUI</strong> - Quản lý quỹ lớp trường THPT</li>
+			</ul>
+			</section>
+			
+			<section id="contact" class="card">
+			<h2>📫 Liên hệ</h2>
+			<p>Email: 2211197@dlu.edu.vn</p>
+			<p>Điện thoại: 0901 234 567</p>
+			<p>LinkedIn:
+				<a href="https://linkedin.com/in/lethuydung" target="_blank">
+				linkedin.com/in/lethuydung
+				</a>
+			</p>
+		</section>
+	</main>
+
+    <button type="button" class="btn-export" onclick="exportPDF()">📄 Xuất PDF</button>
+
+    <footer>
+      &copy; 2025 Lê Thùy Dung. Mọi quyền được bảo lưu.
+    </footer>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+	
+		
